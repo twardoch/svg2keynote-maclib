@@ -12,3 +12,5 @@
 **/.DS_Store
 **/build
 .idea
+.vscode
+.DS_Store
