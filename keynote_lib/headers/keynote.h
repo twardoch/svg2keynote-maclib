@@ -16,7 +16,7 @@ struct keynoteIWAFile {
 std::string decodeAndEncode(std::string protobufString);
 std::string decodeAddSquareDecode(std::string protobufString);
 std::string generateTSPNativeDataClipboardFromSVG(std::string filePath);
-std::string generateMetadata();
+std::string generateTSPNativeMetadataClipboard();
 std::string generateSVGFromKeynoteIWAFiles(const std::vector<keynoteIWAFile>& entries);
 
 

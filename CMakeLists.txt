@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(keynote)
 
-set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
@@ -20,5 +19,3 @@ target_link_libraries(svg2key staticZipper)
 target_include_directories(svg2key PUBLIC keynote_lib)
 target_link_directories(svg2key PRIVATE keynote_lib)
 target_link_libraries(svg2key keynote_lib)
-
-install(TARGETS svg2key DESTINATION /usr/local/bin)
