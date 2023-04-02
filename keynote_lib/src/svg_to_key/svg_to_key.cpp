@@ -35,7 +35,7 @@ void addEditablePathFromSVGToPasteboard(std::vector<MessageWrapper *> *messageLi
             auto* bez_path = new TSP::Path;
 
             addPathElement(bez_path, path->pts[0], path->pts[1], TSP::Path_ElementType_moveTo);
-            std::cout << "Path Instance: ";
+            // std::cout << "Path Instance: ";
             for (int i = 0; i < path->npts-1; i += 3) {
                 float* p = &path->pts[i*2];
                 addBezierPathElement(bez_path, p[2], p[3],p[4], p[5],p[6], p[7]);
