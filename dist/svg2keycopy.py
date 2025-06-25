@@ -23,7 +23,7 @@ def svg_to_clipboard(svg_string):
     pasteboard.setString_forType_('', has_native_drawables_type)
 
 # Example usage
-with open('demo.svg', 'r') as svg_file:
+with open('demo.svg') as svg_file:
     svg_content = svg_file.read()
 
 svg_to_clipboard(svg_content)
