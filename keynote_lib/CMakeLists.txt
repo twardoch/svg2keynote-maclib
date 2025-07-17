@@ -33,7 +33,7 @@ target_link_libraries(keynote_lib ${Protobuf_LIBRARIES})
 
 find_library(SNAPPY_LIBRARY
     NAMES snappy
-    PATHS /usr/local/lib /opt/homebrew/lib
+    PATHS /usr/local/lib /opt/homebrew/lib /usr/lib /usr/lib/x86_64-linux-gnu
 )
 
 if(NOT SNAPPY_LIBRARY)
