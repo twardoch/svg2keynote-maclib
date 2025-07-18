@@ -1,0 +1,30 @@
+// this_file: cmake/version.hpp.in
+// Generated automatically from version.hpp.in by CMake
+
+#pragma once
+
+#define SVG2KEYNOTE_VERSION_MAJOR @VERSION_MAJOR@
+#define SVG2KEYNOTE_VERSION_MINOR @VERSION_MINOR@
+#define SVG2KEYNOTE_VERSION_PATCH @VERSION_PATCH@
+#define SVG2KEYNOTE_VERSION_STRING "@VERSION_STRING@"
+
+#ifdef CMAKE_BUILD_TYPE
+#define SVG2KEYNOTE_BUILD_TYPE "@CMAKE_BUILD_TYPE@"
+#else
+#define SVG2KEYNOTE_BUILD_TYPE "Unknown"
+#endif
+
+#define SVG2KEYNOTE_BUILD_DATE __DATE__
+
+namespace svg2keynote {
+    
+    struct Version {
+        static const int major = SVG2KEYNOTE_VERSION_MAJOR;
+        static const int minor = SVG2KEYNOTE_VERSION_MINOR;
+        static const int patch = SVG2KEYNOTE_VERSION_PATCH;
+        static const char* string() { return SVG2KEYNOTE_VERSION_STRING; }
+        static const char* build_type() { return SVG2KEYNOTE_BUILD_TYPE; }
+        static const char* build_date() { return SVG2KEYNOTE_BUILD_DATE; }
+    };
+    
+}

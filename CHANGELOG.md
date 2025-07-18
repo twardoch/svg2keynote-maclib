@@ -8,8 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Initial project management files: PLAN.md, TODO.md, CHANGELOG.md (2025-06-25)
+- Git-tag-based semantic versioning system with automatic version detection
+- Comprehensive test suite using Catch2 framework
+- GitHub Actions CI/CD workflows for automated testing and releases
+- Multiplatform build support for macOS and Linux
+- Enhanced build scripts with platform detection and testing integration
+- Release automation with artifact packaging and checksums
+- Installation scripts for easy deployment
 
 ### Changed
+- Enhanced CMake build system:
+    - Added conditional Objective-C compilation for macOS-only features
+    - Integrated testing framework with BUILD_TESTING option
+    - Added version detection from git tags
+    - Improved multiplatform dependency handling
 - Improved `svg2key` tool:
     - Renamed misleading parameter in Objective-C wrapper.
     - Added missing `com.apple.iWork.pasteboardState.hasNativeDrawables` pasteboard type.
